@@ -31,13 +31,6 @@
         src: url('assets/fonts/Livvic/Livvic-Regular.ttf');
     }
     /************X***********************  font-family: ****************X***************/
-    
-    html,
-    body {
-        margin: 0%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
     /*  -------Creation d'une variable Abel --------------- */
     
      :root {
@@ -112,9 +105,7 @@
     .nav .nav-brand a {
         font-size: 1.6rem;
         padding: 1rem 0;
-        display: block;
         font-family: var(--Lexend);
-        /*    Utilisation de la variable Abel : var(--Abel)     */
         font-size: 1.6rem;
     }
     
