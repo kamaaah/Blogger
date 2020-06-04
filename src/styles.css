@@ -1,129 +1,128 @@
     /* You can add global styles to this file, and also import other style files */
-    /**********************  font-family: *************************/
-    /*  font-family: Abel */
-    
-    @font-face {
-        font-family: Abel;
-        src: url('assets/fonts/Abel/Abel-Regular.ttf');
-    }
-    /*  font-family: Anton */
-    
-    @font-face {
-        font-family: Anton;
-        src: url('assets/fonts/Anton/Anton-Regular.ttf');
-    }
-    /*  font-family: Josefin */
-    
-    @font-face {
-        font-family: Josefin;
-        src: url('assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf');
-    }
-    /*  font-family: Lexend */
-    
-    @font-face {
-        font-family: Lexend;
-        src: url('assets/fonts/Lexend_Deca/LexendDeca-Regular.ttf');
-    }
-    /*  font-family: Livvic */
-    
-    @font-face {
-        font-family: Livvic;
-        src: url('assets/fonts/Livvic/Livvic-Regular.ttf');
-    }
-    /************X***********************  font-family: ****************X***************/
+
+    @import url('./assets/css/fonts.css');
     /*  -------Creation d'une variable Abel --------------- */
-    
+
+    html,
+    body {
+        box-sizing: content-box;
+        margin: 0%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
      :root {
-        /* ------------ theme font-family---------*/
+        /* ------------ theme colors ------- */
         --text-gray: #3f4954;
         --text-light: #686666da;
         --bg-color: #0f0f0f;
         --white: #ffffff;
         --midnight: #104f55;
-        /* ----------- gradient color ---------*/
+        /* ----------- gradient color -------- */
         --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-        /*  theme font-family */
+        /* ---------- theme font-family ------------ */
         --Abel: 'Abel', cursive;
         --Anton: 'Anton', cursive;
-        --Josefin: 'Josefin' cursive;
-        --Lexend: 'Lexend' cursive;
-        --Livvic: 'Livvic' cursive;
+        --Josefin: 'Josefin', cursive;
+        --Lexend: 'Lexend', cursive;
+        --Livvic: 'Livvic', cursive;
     }
     /* --------X------ Creation d'une variable Abel ------X-- */
     /* -------------- Global classes   ----------------------- */
-    
+
+    section .blog {
+        margin-top: 30rem auto;
+        width: 100%;
+    }
+
     a {
         text-decoration: none;
         color: var(--text-gray);
     }
-    
+
     .flex-row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     ul {
         list-style-type: none;
     }
-    /* ------x-------- Global classes   -----------x------------ */
-    /* ------------- navBar    --------------------- */
-    
-    .nav {
-        background: white;
-        padding: 0 2rem;
-        height: 0rem;
-        min-height: 40vh;
-        overflow: hidden;
-    }
-    
-    .nav .nav-menu {
-        justify-content: space-between;
-    }
-    
-    nav .nav-items {
-        display: flex;
-        margin: 0;
-    }
-    
-    .nav .nav-items .nav-link {
-        padding: 1.6rem 1rem;
-        font-size: 1.1rem;
-        position: relative;
-        font-family: var(--Abel);
-        font-size: 1.1rem;
-    }
-    
-    .nav .nav-items .nav-link:hover {
-        background-color: var(--midnight);
-    }
-    
-    .nav .nav-items .nav-link:hover a {
-        color: var(--white);
-    }
-    
-    .nav .nav-brand a {
-        font-size: 1.6rem;
-        padding: 1rem 0;
+
+    h1 {
         font-family: var(--Lexend);
-        font-size: 1.6rem;
+        font-size: 2.5rem;
     }
-    
-    .nav .social {
-        padding: 1.4rem 0;
+
+    h2 {
+        font-family: var(--Lexend);
     }
-    /* .nav .social i {
-        padding: 0.2rem;
-    } */
-    /* .nav .social i:hover {
-        color: #a1c4cf;
-    } */
-    /* -------x------ navBar    -------------x-------- */
+
+    h3 {
+        font-family: var(--Abel);
+        font-size: 1.3rem;
+    }
+
+    button.btn {
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-family: var(--Livvic);
+        cursor: pointer;
+    }
+
+    span {
+        font-family: var(--Abel);
+    }
+
+    .container {
+        margin: 0 5vw;
+    }
+    /*  site content */
+
+    .text-gray {
+        color: var(--text-gray);
+    }
+
+    p {
+        font-family: var(--Lexend);
+        color: var(--text-light);
+    }
+    /* ------x-------- Global classes   -----------x------------ */
+    /* ------------ Blog Carousel ------------------ */
+
+    section .container .owl-nav {
+        position: absolute;
+        top: 0%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .owl-nav .owl-prev .owl-nav-prev,
+    .owl-nav .owl-next .owl-nav-next {
+        color: var(--text-gray);
+        background: transparent;
+        font-size: 2rem;
+    }
+
+    .owl-theme .owl-nav [class*='owl-']:hover {
+        background: transparent;
+        color: var(--midnight);
+    }
+
+    .owl-theme .owl-nav [class*='owl-'] {
+        outline: none;
+    }
     /*   Viewport less then or equal to 750PX   */
-    
-    @media only screen and (max-width:750px) {
-        .nav .nav-menu {
+    /* @media only screen and (max-width:750px) {
+        .nav.nav-menu,
+        .nav.nav-items {
             flex-direction: column;
         }
-    }
+        .nav.toggle-collapse {
+            display: initial;
+        }
+    } */
     /*  X---- Viewport less then or equal to 750PX --X  */
