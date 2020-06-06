@@ -1,15 +1,15 @@
     /* You can add global styles to this file, and also import other style files */
-
+    
     @import url('./assets/css/fonts.css');
     /*  -------Creation d'une variable Abel --------------- */
-
+    
     html,
     body {
         box-sizing: border-box;
         margin: 0%;
         overflow-x: hidden;
     }
-
+    
      :root {
         /* ------------ theme colors ------- */
         --text-gray: #3f4954;
@@ -28,41 +28,41 @@
     }
     /* --------X------ Creation d'une variable Abel ------X-- */
     /* -------------- Global classes   ----------------------- */
-
+    
     section .blog {
         margin-top: 30rem auto;
         width: 100%;
     }
-
+    
     a {
         text-decoration: none;
         color: var(--text-gray);
     }
-
+    
     .flex-row {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    
     ul {
         list-style-type: none;
     }
-
+    
     h1 {
         font-family: var(--Lexend);
         font-size: 2.5rem;
     }
-
+    
     h2 {
         font-family: var(--Lexend);
     }
-
+    
     h3 {
         font-family: var(--Abel);
         font-size: 1.3rem;
     }
-
+    
     button.btn {
         border: none;
         border-radius: 2rem;
@@ -71,54 +71,54 @@
         font-family: var(--Livvic);
         cursor: pointer;
     }
-
+    
     span {
         font-family: var(--Abel);
     }
-
+    
     .container {
         margin: 0 5vw;
     }
     /*  site content */
-
+    
     .text-gray {
         color: var(--text-gray);
     }
-
+    
     p {
         font-family: var(--Lexend);
         color: var(--text-light);
     }
     /* ------x-------- Global classes   -----------x------------ */
     /* ------------ Blog Carousel ------------------ */
-
+    
     section .container .owl-nav {
         position: absolute;
         top: 0%;
         margin: 0 auto;
         width: 100%;
     }
-
+    
     .owl-nav .owl-prev .owl-nav-prev,
     .owl-nav .owl-next .owl-nav-next {
         color: var(--text-gray);
         background: transparent;
         font-size: 2rem;
     }
-
+    
     .owl-theme .owl-nav [class*='owl-']:hover {
         background: transparent;
         color: var(--midnight);
     }
-
+    
     .owl-theme .owl-nav [class*='owl-'] {
         outline: none;
     }
     /*       Viewport less then or equal to 1130pX      */
-
+    
     @media only screen and (max-width: 1300px) {
         main .site-title {
-            height: 200vh;
+            height: 300vh;
         }
         .site-content .posts.post-content>.post-image,
         .post-info {
@@ -135,7 +135,7 @@
     }
     /* ---x---- Viewport less then or equal to 1600pX ---x---  */
     /*   Viewport less then or equal to 750PX   */
-
+    
     @media only screen and (max-width:750px) {
         .nav .nav-menu.flex-row,
         .nav .nav-items {
@@ -159,10 +159,19 @@
     }
     /*  X---- Viewport less then or equal to 750PX --X  */
     /*   Viewport less then or equal to 520PX   */
-
+    
     @media only screen and (max-width: 520px) {
         main .blog {
             height: 125vh;
+        }
+        .site-content .post-content>.post-image .post-info {
+            display: none;
+        }
+        footer.footer .container>div {
+            padding: 1rem .9rem !important;
+        }
+        footer.footer .rights .text-gray {
+            padding: 0 1rem;
         }
     }
     /*   X----  Viewport less then or equal to 520px ----X   */
