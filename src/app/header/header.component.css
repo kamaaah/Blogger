@@ -1,24 +1,5 @@
 /* -------------- Global classes   ----------------------- */
 
-a {
-    text-decoration: none;
-    color: var(--text-gray);
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-ul {
-    list-style-type: none;
-}
-
-
-/* ------x-------- Global classes   -----------x------------ */
-
-
 /* ------------- navBar    --------------------- */
 
 .nav {

@@ -115,14 +115,3 @@
     .owl-theme .owl-nav [class*='owl-'] {
         outline: none;
     }
-    /*   Viewport less then or equal to 750PX   */
-    /* @media only screen and (max-width:750px) {
-        .nav.nav-menu,
-        .nav.nav-items {
-            flex-direction: column;
-        }
-        .nav.toggle-collapse {
-            display: initial;
-        }
-    } */
-    /*  X---- Viewport less then or equal to 750PX --X  */
