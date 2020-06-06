@@ -5,9 +5,8 @@
 
     html,
     body {
-        box-sizing: content-box;
-        margin: 0%;
         box-sizing: border-box;
+        margin: 0%;
         overflow-x: hidden;
     }
 
@@ -115,3 +114,55 @@
     .owl-theme .owl-nav [class*='owl-'] {
         outline: none;
     }
+    /*       Viewport less then or equal to 1130pX      */
+
+    @media only screen and (max-width: 1300px) {
+        main .site-title {
+            height: 200vh;
+        }
+        .site-content .posts.post-content>.post-image,
+        .post-info {
+            margin-left: 0 !important;
+            bottom: 1.2rem !important;
+            border-radius: 0% !important;
+        }
+        .sidebar .popular-post .post-info {
+            display: none !important;
+        }
+        footer.footer .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    /* ---x---- Viewport less then or equal to 1600pX ---x---  */
+    /*   Viewport less then or equal to 750PX   */
+
+    @media only screen and (max-width:750px) {
+        .nav .nav-menu.flex-row,
+        .nav .nav-items {
+            flex-direction: column;
+        }
+        .nav .toggle-collapse {
+            display: initial;
+        }
+        .container .site-content {
+            grid-template-columns: 100%;
+        }
+        .site-content .post-content .post-info {
+            /* width: 88%; */
+            height: 20%;
+            padding: 0;
+            position: relative;
+        }
+        footer.footer .container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    /*  X---- Viewport less then or equal to 750PX --X  */
+    /*   Viewport less then or equal to 520PX   */
+
+    @media only screen and (max-width: 520px) {
+        main .blog {
+            height: 125vh;
+        }
+    }
+    /*   X----  Viewport less then or equal to 520px ----X   */

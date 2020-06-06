@@ -1,4 +1,5 @@
-/* -------------- Global classes   ----------------------- */
+@import url('../../assets/css/fonts.css');
+@import url('../../styles.css');
 
 /* ------------- navBar    --------------------- */
 
@@ -10,39 +11,40 @@
     overflow: hidden;
 }
 
-.nav .nav-menu {
+.nav-menu {
     justify-content: space-between;
-}
-
-.nav .toggle-collapse {
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
-    display: none;
-}
-
-.nav .toggle-collapse .toggle-icons {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.7rem 0;
-}
-
-.nav .toggle-collapse .toggle-icons i {
-    font-size: 1.4rem;
-    color: var(--text-gray);
 }
 
 .collapse {
     height: 30rem;
 }
 
-.nav .nav-items {
+.toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+    height: 30rem;
+}
+
+.toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.nav-items {
     display: flex;
     margin: 0;
 }
 
-.nav .nav-items .nav-link {
+.nav-link {
     position: relative;
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
@@ -50,15 +52,15 @@
     font-size: 1.1rem;
 }
 
-.nav .nav-items .nav-link:hover {
+.nav-link:hover {
     background-color: var(--midnight);
 }
 
-.nav .nav-items .nav-link:hover a {
+.nav-link:hover a {
     color: var(--white);
 }
 
-.nav .nav-brand a {
+.nav-brand a {
     display: block;
     font-size: 1.6rem;
     padding: 1rem 0;
@@ -66,15 +68,15 @@
     font-size: 1.6rem;
 }
 
-.nav .social {
+.social {
     padding: 1.4rem 0;
     border: black;
 }
 
-.nav .social i {
+.social i {
     padding: 0 .2rem;
 }
 
-.nav .social i:hover {
+.social i:hover {
     color: #a1c4cf;
 }
